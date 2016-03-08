@@ -1,1 +1,2 @@
-# ibm-adobe
+## IBM Adobe Project
+# Sean Yang
