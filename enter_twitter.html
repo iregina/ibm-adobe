@@ -11,14 +11,15 @@
 <h1> Header </h1>
 <p> body text </p>
 <form id="enter_twitter">
-  <input type="text" id="myButton" name="twitter_handle">
+  <input type="text" id="myButton" name="twitter_handle" placeholder="twitter handle">
+  <input type="submit">
 </form>
 
 <script type="text/javascript">
 
 $('#myButton').keypress(function (e) {
   if (e.which == 13) {
-  	alert('You pressed enter!');
+  	alert('Thank you entering your twitter handle!');
     location.href = "words.html";
     return false;    //<---- Add this line
  	 }
