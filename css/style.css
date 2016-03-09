@@ -1,5 +1,19 @@
 
+/*Get started button*/
 
+#getstarted{
+  bottom: 13%;
+  left: 40px;
+  position: absolute;
+  background-color: #29B9E9; /* Green */
+    border: none;
+    color: white;
+    padding: 23px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}
 
 .gallery-cell {
   width: 100%;  full width 
@@ -18,7 +32,15 @@
     background: blue;
     color:#FFF;
 }
-
+.gallery-cell h2 {
+    position:absolute;
+    top: 20%;
+    font-size:350%;
+    left:40px;
+    font-weight: 500;
+    line-height: 110%;
+    color: white;
+}
 
 img.make-it-fit {
     width: 100%;
@@ -49,12 +71,13 @@ img.make-it-fit {
 
 /* position dots in gallery */
 .flickity-page-dots {
-  bottom: 15px;
+  bottom: 25%;
+
 }
 /* white circles */
 .flickity-page-dots .dot {
-  width: 12px;
-  height: 12px;
+  width: 9px;
+  height: 9px;
   opacity: 1;
   background: transparent;
   border: 2px solid white;
