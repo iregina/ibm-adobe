@@ -1,1 +1,17 @@
-twitter.css
+input[type="text"] {
+    width: 200px;
+    height: 20px;
+    padding-right: 50px;
+}
+
+input[type="submit"] {
+	background: url("arrow.png") no-repeat 0 0 transparent;
+    background-size: 10px;
+    margin-bottom: 10px;
+    margin-left: -28px;
+    height: 19px;
+  
+   /* color: blue;*/
+    border: none;
+    -webkit-appearance: none;
+}
