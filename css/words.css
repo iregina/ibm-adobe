@@ -1,0 +1,104 @@
+h1{
+	
+	font-size:32px;
+	color: #054068;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:200;
+	margin-top:20px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	
+}
+
+h2{
+	font-size:32x;
+	color: #1f1f1f;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:200;
+	margin-top:10px;
+}
+
+h3{
+	font-size:16px;
+	color: #1f1f1f;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:200;
+	margin-top:10px;
+}
+
+.img-circle {
+    border-radius: 50%;
+	width:100px;
+	height:auto;
+	display:inline-block;
+	margin-top:5px;
+	margin-left:5px;
+	position:relative;
+	float:left;
+	
+	
+}
+
+#line{
+	display:inline-block;
+	font-size:115px;
+	margin-top:5px;
+	margien-left:30px;
+	float:right;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:100;
+	color:lightgray;	
+}
+
+.profile-info-container {
+	height:200px;
+	width:600px;
+	border:1px;
+	display:inline-block;
+	position:relative;
+	left:60px;
+	top:20px;
+	margin:0px;
+	/*background-color:lightgray; */
+	overflow:hidden;
+}
+
+.profile-image-area{
+	display:inline-block;
+	/*background-color:gray;*/
+	height:110px;
+	width:150px;
+	float:left;
+}
+
+.profile-info{
+	display:inline-block;
+	margin-top:0px;
+	margin-left:7px;
+	/*background-color:gray;*/
+	clear:both;
+}
+
+#whatisnumber {
+	 bottom:7%;
+	 right: 60px;
+	 position:absolute;
+	 background-color: #29B9E9;
+	 border: none;
+	 color: white;
+	 padding: 23px 25px;
+	 text-align:center;
+	 text-decoration:none;
+	 display:inline-block;
+	 font-size:16px;
+	 font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	 font-weight:200;
+}
+
+.details-container{
+	height:250px;
+	width:841px;
+	position:relative;
+	left:60px;
+	background-color:lightgray;
+}
