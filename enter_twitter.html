@@ -8,24 +8,52 @@
 </head>
 
 <body>
-<h1> Header </h1>
-<p> body text </p>
-<form id="enter_twitter">
-  <input type="text" id="myButton" name="twitter_handle" placeholder="twitter handle">
-  <input type="submit" value="" name="">
-</form>
+<div>
+  <header id="header_twitter">
+      <img src="imgs/back.png" align="left" class="back" width="2%" height="58%">
+      <img src="imgs/IBMlogo.png" align="left" class="ibm" width="14%" height="60%">
 
-<script type="text/javascript">
+      <img src="imgs/AdobeLogo.png" align="right" class="adobe" width="18%" height="55%">
 
-$('#myButton').keypress(function (e) {
-  if (e.which == 13) {
-  	// alert('Thank you entering your twitter handle!');
-    location.href = "words.html";
-    return false;    //<---- Add this line
- 	 }
-	});
+  </header>
+</div>
 
-</script>
+<div id="landingpage">
+
+
+    <div>
+        <h1> Data that tells your story.</h1>
+        <p class="subtitle"> AEM uses Watson Personality Insights to scan your tweets, in just seconds,<br> for specific personality traits, based on linguistic analysis.</p>
+    </div>
+
+
+    <div id="handle">
+      
+        <p> <img src="imgs/watson.png" class="watson" width="50px" height="50px"><strong>Get started by entering your Twitter handle</strong></p>
+
+
+        <form id="enter_twitter" action="words.html" method="get">
+            <input type="text" id="myButton" name="twitter_handle" placeholder="@JennaArrington">
+            <input type="submit" value="Submit" name="Submit">
+        </form>
+
+    </div>
+</div>
+
+  <script type="text/javascript">
+
+      $('#myButton').keypress(function (e) {
+        if (e.which == 13) {
+        	// alert('Thank you entering your twitter handle!');
+          location.href = "words.html";
+          return false;    //<---- Add this line
+       	 }
+      	});
+
+  </script>
+
+
+
 
 </body>
 </html>
