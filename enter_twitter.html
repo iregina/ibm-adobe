@@ -8,13 +8,19 @@
 </head>
 
 <body>
-<h1> Header </h1>
-<p> body text </p>
-<form id="enter_twitter">
-  <input type="text" id="myButton" name="twitter_handle" placeholder="twitter handle">
-  <input type="submit" value="" name="">
-</form>
+<div id="landingpage">
+<div>
+<h1> Data that tells your story.</h1>
+<p class="subtitle"> AEM uses Watson Personality Insights to scan your tweets, in just seconds,<br> for specific personality traits, based on linguistic analysis.</p>
+</div>
+<div id="handle">
+<p><strong>Get started by entering your Twitter handle</strong></p>
 
+<form id="enter_twitter" action="words.html" method="get">
+  <input type="text" id="myButton" name="twitter_handle" placeholder="twitter handle">
+  <input type="submit" value="Submit" name="Submit">
+</form>
+</div>
 <script type="text/javascript">
 
 $('#myButton').keypress(function (e) {
@@ -26,6 +32,6 @@ $('#myButton').keypress(function (e) {
 	});
 
 </script>
-
+</div>
 </body>
 </html>
