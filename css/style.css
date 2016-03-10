@@ -196,3 +196,24 @@ img.make-it-fit {
 
 
 
+#header{
+  background: #0C1B31;
+      width: 100%;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10000;
+}
+
+.ibm {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.adobe {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+

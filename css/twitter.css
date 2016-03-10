@@ -2,14 +2,42 @@
 /* ---------------------------------------------------------------- */
 
 /* ------------STYLING FOR LANDING PAGE---------------------- */
+header {
+  background: none;
+      width: 100%;
+      height: 50px;
+      margin-top: -190px;
+      position: absolute;
+      z-index: 10000;
+}
+.back {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.ibm {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.adobe {
+  margin-top: 10px;
+  margin-right: 35px;
+}
+
+
 
 body{
-margin: 7%;
-margin-top: 20%;
+
 font: 16px/1 sans-serif;
 -moz-osx-font-smoothing: grayscale;
 -webkit-font-smoothing: antialiased;
 background: #0C1B31;
+}
+
+#landingpage {
+    margin: 7%;
+    margin-top: 20%;
 }
 
 h1{
@@ -41,7 +69,7 @@ input[type="text"] {
     padding-right: 50px;
     background: none;
     font-size: 20px;
-    border-width: 2px;
+    border-width: 1px;
 }
 
 input[type="submit"]{
@@ -58,19 +86,20 @@ input[type="submit"]{
 
 }
 
+
 #handle{
     margin-top: 25%;
+    vertical-align: middle;
+    line-height: 130%;
 }
-/*
 
-input[type="submit"] {
-	background: url("arrow.png") no-repeat 0 0 transparent;
-    background-size: 10px;
-    margin-bottom: 10px;
-    margin-left: -28px;
-    height: 19px;
-  
-   /* color: blue;*/
-    border: none;
-    -webkit-appearance: none;*/
+.watson{
+    margin-right: 14px;
 }
+
+
+
+
+
+
+
