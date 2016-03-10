@@ -1,11 +1,110 @@
+/*---------Other Screens---------------*/
 
-/*Get started button*/
+  body {
+    margin: 0;
+    font: 16px/1 sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background: #466BB0;
+  }
 
 #getstarted{
-  bottom: 13%;
+    bottom: 10%;
+    left: 18%;
+    position: absolute;
+    background-color: #29B9E9; 
+      border: none;
+      color: white;
+      padding: 23px 55px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+  }
+
+.flickity-prev-next-button {
+    display: none;
+  }
+
+  /* position dots in gallery */
+  .flickity-page-dots {
+    bottom: 30%;
+    left: 15%;
+
+  }
+  /* white circles */
+  .flickity-page-dots .dot {
+    width: 9px;
+    height: 9px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+  }
+
+  .gallery-cell {
+  width: 70%;
+  overflow: hidden;
+ /* margin-right: 10px;*/
+  background: red;
+  display:inline-block;
+  position:relative;
+  padding-right: 0;
+}
+
+/* ---------------------------------------------------------------- */
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  body {
+      margin: 0;
+      font: 16px/1 sans-serif;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      background: green;
+  }
+
+  .gallery-cell {
+  width: 100%;  full width 
+  height: auto; /* height of gallery */
+ /* margin-right: 10px;*/
+  background: red;
+  display:inline-block;
+  position:relative;
+  padding-right: 0;
+}
+
+
+  #getstarted{
+    bottom: 13%;
+    left: 40px;
+    position: absolute;
+    background-color: #29B9E9; 
+      border: none;
+      color: white;
+      padding: 23px 55px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 25px;
+  }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #getstarted{
+  bottom: 50%;
   left: 40px;
-  position: absolute;
-  background-color: #29B9E9; /* Green */
+/*  position: absolute;*/
+  background-color: #29B9E9; 
     border: none;
     color: white;
     padding: 23px 55px;
@@ -15,15 +114,59 @@
     font-size: 25px;
 }
 
-.gallery-cell {
-  width: 100%;  full width 
-  height: auto; /* height of gallery */
- /* margin-right: 10px;*/
-  background: red;
-  display:inline-block;
-  position:relative;
-  padding-right: 0;
+.flickity-prev-next-button {
+    display: none;
+  }
+
+  /* position dots in gallery */
+  .flickity-page-dots {
+    bottom: 25%;
+    left:10px;
+  }
+  /* white circles */
+  .flickity-page-dots .dot {
+    width: 9px;
+    height: 9px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+  }
+
+
 }
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+  .flickity-prev-next-button {
+    display: none;
+  }
+
+  /* position dots in gallery */
+  .flickity-page-dots {
+    bottom: 25%;
+    left:10px;
+  }
+  /* white circles */
+  .flickity-page-dots .dot {
+    width: 9px;
+    height: 9px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+  }
+
+}
+
+
+
+/* ---------------------------------------------------------------- */
+
 
 .gallery-cell a {
     position:absolute;
@@ -46,39 +189,5 @@ img.make-it-fit {
     width: 100%;
     height: 100%;
 }
-/* this is for iphones */
-/*@media only screen and (max-width: 870px) {
 
-  img.make-it-fit {
-      visibility: hidden; 
-      overflow: hidden; 
-  }
 
-  .flickity-page-dots {
-  bottom: -20px;
-  }
-}
-*/
-/*
-@media screen and (max-width: 1024px) {  Specific to this particular image 
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   }}*/
-
-.flickity-prev-next-button {
-  display: none;
-}
-
-/* position dots in gallery */
-.flickity-page-dots {
-  bottom: 25%;
-
-}
-/* white circles */
-.flickity-page-dots .dot {
-  width: 9px;
-  height: 9px;
-  opacity: 1;
-  background: transparent;
-  border: 2px solid white;
-}
