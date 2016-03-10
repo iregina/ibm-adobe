@@ -86,21 +86,15 @@ input[type="submit"]{
 
 }
 
+
 #handle{
     margin-top: 25%;
+    vertical-align: middle;
+    line-height: 130%;
 }
-/*
 
-input[type="submit"] {
-	background: url("arrow.png") no-repeat 0 0 transparent;
-    background-size: 10px;
-    margin-bottom: 10px;
-    margin-left: -28px;
-    height: 19px;
-  
-   /* color: blue;*/
-    border: none;
-    -webkit-appearance: none;*/
+.watson{
+    margin-right: 14px;
 }
 
 
