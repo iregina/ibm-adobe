@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/twitter.css" media="screen">
     <!-- animsition.css --> 
-<link rel="stylesheet" href="./dist/css/animsition.min.css">
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.1/css/animsition.css">
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- animsition.js -->
-<script src="./dist/js/jquery.animsition.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.1/js/animsition.js"></script>
 </head>
 
 <body>
-<div class="animsition">
+
+  <div>
   <header id="header_twitter">
       <a href="index.html"><img src="imgs/back.png" align="left" class="back" width="2%" height="58%"></a>
       <img src="imgs/IBMlogo.png" align="left" class="ibm" width="14%" height="60%">
@@ -23,6 +25,8 @@
 
   </header>
 </div>
+
+<div class="animsition">
 
 <div id="landingpage">
 
@@ -40,22 +44,30 @@
 
         <form id="enter_twitter" action="words.html" method="get">
             <input type="text" id="myButton" name="twitter_handle" placeholder="@JennaArrington">
-            <input type="submit" value="Submit" class="animsition-link"name="Submit">
+            <a href="results.html" class="animsition-link" data-animsition-out-class="fade-out-right"
+  data-animsition-out-duration="2000" ><input type="submit" value="Submit"name="Submit"></a>
         </form>
 
     </div>
 </div>
+</div>
 
   <script type="text/javascript">
 
-      $('#myButton').keypress(function (e) {
-        if (e.which == 13) {
-        	// alert('Thank you entering your twitter handle!');
-          location.href = "words.html";
-          return false;    //<---- Add this line
-       	 }
-      	});
   $(document).ready(function() {
+
+
+
+  $('#myButton').keypress(function (e) {
+        if (e.which == 13) {
+          // alert('Thank you entering your twitter handle!');
+          location.href = "results.html";
+          return false;    //<---- Add this line
+         };
+
+
+  });
+
   $(".animsition").animsition({
     inClass: 'fade-in',
     outClass: 'fade-out',
@@ -77,6 +89,7 @@
     overlayClass : 'animsition-overlay-slide',
     overlayParentElement : 'body'
   });
+
 });
 
   </script>
