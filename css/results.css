@@ -130,55 +130,33 @@ h3{
 }
 
 
-.details-container{
-	height:300px;
-	width:841px;
-	position:relative;
-	left:60px;
-	background-color:lightgray;
-}
-
-.summary{
-	width:420px;
-	line-height:120%;
-	display:inline-block
-}
-
-.image-grid{
-	width:400px;
-	height:auto;
-	display:inline-block
-}
-
-.image-grid img{
-	width:150px;
-	height:auto;
-	margin-left:50px;
-}
-
-tr {
-	background: red;
+tbody {
+    line-height: 0;
 }
 
 .pic {
-	max-width: 200px;
+	margin-top: 40px;
+/*	max-width: 600px;*/
+	border-collapse: collapse;
 }
 
 .more_details{
 	max-width: 95%;
-	margin-left: 0%;
+	margin-left: -15px;
+	margin-top: 0px;
 }
 
 
 .left_column{
-	max-width: 600px;
-	padding: 20px 80px 20px 80px;
-	line-height: 150%;
+	max-width: 500px;
+	padding: 0px 45px 0px 65px;
+	line-height: 117%;
 	font-size: 18px;
 	font-weight: 300;
 	overflow: hidden;
-	background-color: yellow;
 }
 
-
+.chart2{
+	margin-top: -20px;
+}
 
