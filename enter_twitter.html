@@ -5,10 +5,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/twitter.css" media="screen">
+    <!-- animsition.css --> 
+<link rel="stylesheet" href="./dist/css/animsition.min.css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+<script src="./dist/js/jquery.animsition.min.js"></script>
 </head>
 
 <body>
-<div>
+<div class="animsition">
   <header id="header_twitter">
       <a href="index.html"><img src="imgs/back.png" align="left" class="back" width="2%" height="58%"></a>
       <img src="imgs/IBMlogo.png" align="left" class="ibm" width="14%" height="60%">
@@ -34,7 +40,7 @@
 
         <form id="enter_twitter" action="words.html" method="get">
             <input type="text" id="myButton" name="twitter_handle" placeholder="@JennaArrington">
-            <input type="submit" value="Submit" name="Submit">
+            <input type="submit" value="Submit" class="animsition-link"name="Submit">
         </form>
 
     </div>
@@ -49,6 +55,29 @@
           return false;    //<---- Add this line
        	 }
       	});
+  $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    unSupportCss: [
+      'animation-duration',
+      '-webkit-animation-duration',
+      '-o-animation-duration'
+    ],
+    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body'
+  });
+});
 
   </script>
 
