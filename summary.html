@@ -3,13 +3,9 @@
 <html>
 <head>
   <title>IBM Adobe Project</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
   <link rel="stylesheet" type="text/css" href="css/results.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script language="javascript" src="javascript.js"> </script>
 
 </head>
@@ -102,9 +98,9 @@
         </td>
 
         <td class="block2">
-          <form id="enter_twitter" action="words.html" method="get">
+          <form id="enter_twitter" action="lastpage.html" method="get">
           <input type="text" id="myButton" name="email" placeholder="Enter email here">
-          <a href="results.html"><input type="submit" value="Submit"name="Submit"></a>
+          <a href="lastpage.html"><input type="submit" value="Submit"name="Submit"></a>
           </form>
         </td>
 
@@ -113,13 +109,19 @@
     </tbody>
   </tale>
 
+<script>
 
+  $(document).ready(function() {
 
-<!--   <div class="email-form">
-    	<div>
-    	<a href="more_info.html"><button id="whatisnumber" type="button">Submit</button></a>
-    	</div>
-  </div> -->
+  $('#myButton').keypress(function (e) {
+        if (e.which == 13) {
+          location.href = "lastpage.html";
+          return false;    
+      });
+  });
+
+  </script>
+
 
 </body>
 </html>

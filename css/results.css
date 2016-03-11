@@ -105,6 +105,15 @@ input[type="submit"]{
 	 font-weight:200;
 }
 
+#home{
+	bottom:7%;
+	right: 20px;
+	position:absolute;
+	background: none;
+	border: none;
+	padding: 23px 50px;
+	display:inline-block;
+}
 
 .img-circle {
     border-radius: 50%;
