@@ -1,7 +1,7 @@
 
 /* ---------------------------------------------------------------- */
 
-/* ------------STYLING FOR LANDING PAGE---------------------- */
+/* ------------STYLING FOR HEADER ---------------------- */
 header {
   background: none;
       width: 100%;
@@ -93,6 +93,8 @@ input[type="submit"]{
     vertical-align: middle;
     line-height: 130%;
 }
+
+/* --- this is styling for the little watson logo  ----- */
 
 .watson{
     margin-right: 14px;

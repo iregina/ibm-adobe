@@ -89,6 +89,8 @@ input[type="submit"]{
 
 }
 
+/* --- this is the bottom corner right button --------- */
+
 #whatisnumber {
 	 bottom:7%;
 	 right: 60px;
@@ -104,6 +106,8 @@ input[type="submit"]{
 	 font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	 font-weight:200;
 }
+
+/* --- this it the button for the confirmation page ---- */
 
 #home{
 	bottom:7%;
@@ -172,6 +176,8 @@ input[type="submit"]{
 tbody {
     line-height: 0;
 }
+
+/* --- this is styling for the images in confirmation html ----*/
 
 .pic {
 	margin-top: 40px;
